@@ -2,7 +2,8 @@
 - name: update web servers
   hosts: webservers
   remote_user: ec2-user
-
+  become: yes
+  become_user: root
   tasks:
   - name: ensure htop is at the latest version
     yum:
