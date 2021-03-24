@@ -1,7 +1,7 @@
 ---
 - name: update web servers
   hosts: webservers
-  remote_user: root
+  remote_user: ec2-user
 
   tasks:
   - name: ensure htop is at the latest version
