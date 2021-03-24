@@ -7,5 +7,5 @@
   tasks:
   - name: ensure htop is at the latest version
     yum:
-      name: htop
+      name: wireshark
       state: latest
