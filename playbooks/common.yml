@@ -1,11 +1,11 @@
 ---
 - name: update web servers
-  hosts: webservers
+  hosts: webservers, nfs
   remote_user: ec2-user
   become: yes
   become_user: root
   tasks:
-  - name: ensure htop is at the latest version
+  - name: ensure wireshark is at the latest version
     yum:
       name: wireshark
       state: latest
