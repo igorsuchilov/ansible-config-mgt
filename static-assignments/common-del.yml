@@ -17,6 +17,4 @@
   become_user: root
   tasks:
   - name: delete wireshark
-    apt:
-      name: wireshark
-      state: absent
+    shell: apt uninstall wireshark
