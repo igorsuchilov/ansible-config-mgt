@@ -17,4 +17,6 @@
   become_user: root
   tasks:
   - name: delete wireshark
-    shell: apt uninstall wireshark
+    yum:
+      name: wireshark
+      state: absent
