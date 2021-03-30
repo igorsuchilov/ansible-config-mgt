@@ -8,7 +8,7 @@
   - name: delete wireshark
     yum:
       name: wireshark
-      state: absent
+      state: removed
 
 - name: update LB server
   hosts: lb
@@ -19,4 +19,4 @@
   - name: delete wireshark
     apt:
       name: wireshark
-      state: absent
+      state: removed
