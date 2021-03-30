@@ -21,4 +21,4 @@
   #    name: wireshark
   #    state: absent
   - name: delete wireshark
-  action: apt pkg=wireshark state=absent
+    action: apt pkg=wireshark state=absent
