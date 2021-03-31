@@ -26,4 +26,6 @@
     apt:
       name: wireshark
       state: absent
+      purge: yes
+      autoclean: yes
 
